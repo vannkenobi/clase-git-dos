@@ -1,0 +1,59 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GRADIENTES */
+
+body{
+    background: radial-gradient(circle, blue,navy);
+}
+
+h1{
+    margin-top: 100px;
+    text-align: center;
+}
+
+/*PROPIEDADES DE LA CAJA 
+TRANSFORMACIONES */
+
+.caja{
+    background-color:tomato;
+    width: 250px;
+    height: 250px;
+    margin:2rem ;
+    border: 5px solid black;
+    transition: 1s;
+
+}
+
+/* PSEUDOCLASE HOVER */
+.caja:hover{
+    border-radius: 100%;
+    transform: rotate(360deg);
+}
+
+/* ANIIMACIONES */
+
+img{
+    width: 60%;
+}
+
+.girar{
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-duration: 120s;
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
